@@ -5,4 +5,9 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://estultus.github.io/desmintiendo-a-la-federacion-colombiana-de-tenis-fct/contexto-documental/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
