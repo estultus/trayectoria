@@ -4,4 +4,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://estultus.github.io/desmintiendo-a-la-federacion-colombiana-de-tenis-fct/sitemap.xml
+Sitemap: https://estultus.github.io/trayectoria/sitemap.xml
