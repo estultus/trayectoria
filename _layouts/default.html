@@ -67,21 +67,8 @@
 </header>
 <article id="contenido">
   {% include profile.html %}
-  <section class="legal-section">
-    {{ content }}
-  </section>
+  {{ content }}
 </article>
-<script>
-(function(){
-  const legal=document.querySelector('.legal-section');
-  if(!legal) return;
-  const ps=[...legal.querySelectorAll(':scope > p')];
-  let strongOnly=ps.filter(p=>p.children.length===1 && p.firstElementChild && p.firstElementChild.tagName==='STRONG' && p.textContent.trim()===p.firstElementChild.textContent.trim());
-  if(strongOnly[0]){const h=document.createElement('h1');h.innerHTML=strongOnly[0].innerHTML;strongOnly[0].replaceWith(h)}
-  strongOnly=[...legal.querySelectorAll(':scope > p')].filter(p=>p.children.length===1 && p.firstElementChild && p.firstElementChild.tagName==='STRONG' && p.textContent.trim()===p.firstElementChild.textContent.trim());
-  if(strongOnly[0]) strongOnly[0].classList.add('byline');
-  strongOnly.slice(1).forEach(p=>{const h=document.createElement('h2');h.innerHTML=p.innerHTML; p.replaceWith(h)});
-})();
-</script>
+<footer><a href="{{ '/contexto-documental/' | relative_url }}">Contexto documental</a></footer>
 </body>
 </html>
